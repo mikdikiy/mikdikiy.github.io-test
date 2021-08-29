@@ -1,0 +1,68 @@
+
+div.firstline,
+div.secondline,
+div.thirdline,
+div.fourthline
+{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -border: 2px solid black;
+  min-height: 1rem;
+  justify-content: stretch;
+  align-items: stretch;
+}
+div.secondline>div.column2,
+div.thirdline>div.column2
+{
+  flex-direction: column;  
+}
+
+
+div.firstline>div,
+div.secondline>div.column2,
+div.thirdline>div,
+div.fourthline>div.column2
+{
+  width: 33.33333%; 
+}
+div.secondline>div.column1,
+div.fourthline>div.column1
+{
+  width: 66.66666%;
+}
+
+
+/* -------------COLORS----------------- */
+div.firstline>div.column1,
+div.secondline .row1
+{
+  background-color: #FAEBD8;
+}
+
+div.firstline>div.column2,
+div.secondline .row2,
+div.thirdline>div.column3
+{
+  background-color: #F5F5DD;
+}
+div.firstline>div.column3,
+div.secondline .row3,
+div.thirdline>div.column1
+{
+  background-color: #FEE3C6;
+}
+div.secondline>div.column1,
+div.fourthline>div.column1
+{
+  background-color: #FFF8DC;
+}
+div.thirdline>div.column2>div.row1,
+div.fourthline>div.column2
+{
+  background-color: #E5E6F8;
+}
+div.thirdline>div.column2>div.row2{
+  background-color: #F1FFF0;
+}
