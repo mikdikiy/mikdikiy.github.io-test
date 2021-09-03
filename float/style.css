@@ -1,0 +1,101 @@
+html{height: 100%;}
+body{height: 100%;margin: 0;}
+:root
+{
+--lightorange: #FAEBD8;
+--green:#F5F5DD;
+--orange: #FEE3C6;
+--yellow: #FFF8DC;
+--strongorange: #E5E6F8;
+--violet: #F1FFF0;
+}
+
+div{box-sizing: border-box;}
+
+.column:first-child,.column:nth-child(2){float: left;}
+.column:last-child{float: right;}
+
+.column,.row{padding: 5px;}
+
+.line:nth-child(2)>.column:nth-child(2),
+.line:nth-child(3)>.column:nth-child(2),
+.line:nth-child(5)>.column
+{
+  padding: 0;
+}
+
+/* --------------HEIGHT---------------*/
+.line:nth-child(2)>.column:first-child
+{
+  height: 5.25rem;
+}
+.line:nth-child(3)>.column:first-child,
+.line:nth-child(3)>.column:last-child
+{
+  height: 3.5rem;
+}
+.line:nth-child(5)>.column:first-child .row
+{
+  height: 2.4rem;
+}
+.line:nth-child(5)>.column:nth-child(2) .row
+{
+  height: 3.6rem;
+}
+
+/* --------------WIDTH-------------------- */
+.line:nth-child(1)>.column,
+.line:nth-child(2)>.column:nth-child(2),
+.line:nth-child(3)>.column,
+.line:nth-child(4)>.column:nth-child(2),
+.line:nth-child(5)>.column
+{
+  width: 33.33333%;
+}
+.line:nth-child(2)>.column:first-child,
+.line:nth-child(4)>.column:first-child
+{
+  width: 66.66666%;
+}
+
+/* -------------COLORS----------------- */
+.line:nth-child(1)>.column:first-child,
+.line:nth-child(2) .row:nth-child(1),
+.line:nth-child(5)>.column:first-child .row:nth-child(1),
+.line:nth-child(5)>.column:last-child .row:nth-child(1),
+.line:nth-child(5)>.column:last-child .row:nth-child(4)
+{
+  background-color: var(--lightorange);
+}
+.line:nth-child(1)>.column:nth-child(2),
+.line:nth-child(2) .row:nth-child(2),
+.line:nth-child(3)>.column:last-child,
+.line:nth-child(5)>.column:first-child .row:nth-child(2),
+.line:nth-child(5)>.column:last-child .row:nth-child(2)
+{
+  background-color: var(--green);
+}
+.line:nth-child(1)>.column:last-child,
+.line:nth-child(2) .row:nth-child(3),
+.line:nth-child(3)>.column:first-child,
+.line:nth-child(5)>.column:first-child .row:nth-child(3),
+.line:nth-child(5)>.column:last-child .row:nth-child(3)
+{
+  background-color: var(--orange);
+}
+.line:nth-child(2)>.column:first-child,
+.line:nth-child(4)>.column:first-child
+{
+  background-color: var(--yellow);
+}
+.line:nth-child(3)>.column:nth-child(2)>.row:nth-child(1),
+.line:nth-child(4)>.column:nth-child(2),
+.line:nth-child(5)>.column:nth-child(2) .row:nth-child(1)
+{
+  background-color: var(--strongorange);
+}
+.line:nth-child(3)>.column:nth-child(2)>.row:nth-child(2),
+.line:nth-child(5)>.column:nth-child(2) .row:nth-child(2)
+{
+  background-color: var(--violet);
+}
