@@ -1,114 +1,49 @@
-
-div{
-  box-sizing: border-box;
+body{margin:0; padding:0;}
+:root
+{
+  --light-orange:#FAEBD8;
+  --green: #F5F5DD;
+  --orange: #FEE3C6;
+  --yellow: #FFF8DC;
+  --violet: #E5E6F8;
+  --light-green: #F1FFF0;
 }
-
-div.firstline,
-div.secondline,
-div.thirdline,
-div.fourthline,
-div.fifthline
+div{box-sizing: border-box;}
+.line
 {
   display: flex;
   margin: 0;
   padding: 0;
 }
+.column{padding: 5px;}
 
-div[class^="column"]
-{
-  padding: 5px; 
-}
-
-div.secondline>div.column2,
-div.thirdline>div.column2,
-div.fifthline>div[class^="column"]
+.flex>.row
 {
   flex-direction: column;
   overflow: hidden;
-  padding: 0;
+  padding: 5px;
 }
 
-div[class^="row"]
+.row
 {
-  color:green;
   overflow-y: auto;
-  padding: 5px; 
+  padding: 5px;
 }
+.three-row,.two-row,.four-row{margin:0;padding:0;}
 
 /* --------------HEIGHT---------------*/
-
-div.fifthline>div.column1 div,
-div.secondline>div.column2 div
-{
-  height:33.33333%;
-}
-
-div.thirdline>div.column2 div,
-div.fifthline>div.column2 div
-{
-  height:50%;
-}
-div.fifthline>div.column3 div
-{
-  height:25%;
-}
-
+.three-row>.row{height:33.33333%;}
+.two-row>.row{height:50%;}
+.four-row>.row{height:25%;}
 
 /* --------------WIDTH-------------------- */
-div.firstline>div,
-div.secondline>div.column2,
-div.thirdline>div,
-div.fourthline>div.column2,
-div.fifthline>div
-{
-  width: 33.33333%;
-}
-div.secondline>div.column1,
-div.fourthline>div.column1
-{
-  width: 66.66666%;
-}
-
+.line>.column{width: 33.33333%;}
+.line>.yellow{width: 66.66666%;}
 
 /* -------------COLORS----------------- */
-div.firstline>div.column1,
-div.secondline .row1,
-div.fifthline>div.column1 .row1,
-div.fifthline>div.column3 .row1,
-div.fifthline>div.column3 .row4
-{
-  background-color: #FAEBD8;
-}
-
-div.firstline>div.column2,
-div.secondline .row2,
-div.thirdline>div.column3,
-div.fifthline>div.column1 .row2,
-div.fifthline>div.column3 .row2
-{
-  background-color: #F5F5DD;
-}
-div.firstline>div.column3,
-div.secondline .row3,
-div.thirdline>div.column1,
-div.fifthline>div.column1 .row3,
-div.fifthline>div.column3 .row3
-{
-  background-color: #FEE3C6;
-}
-div.secondline>div.column1,
-div.fourthline>div.column1
-{
-  background-color: #FFF8DC;
-}
-div.thirdline>div.column2>div.row1,
-div.fourthline>div.column2,
-div.fifthline>div.column2 .row1
-{
-  background-color: #E5E6F8;
-}
-div.thirdline>div.column2>div.row2,
-div.fifthline>div.column2 .row2
-{
-  background-color: #F1FFF0;
-}
+.light-orange{background-color: var(--light-orange);}
+.green{background-color: var(--green);}
+.orange{background-color: var(--orange);}
+.yellow{background-color: var(--yellow);}
+.violet{background-color: var(--violet);}
+.light-green{background-color: var(--light-green);}
