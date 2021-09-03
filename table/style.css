@@ -1,42 +1,51 @@
 
-/* table */
+:root
+{
+--light-orange:#F8EBD6;
+--green:#F3F6DB;
+--orange: #FBE4C3;
+--yellow:#FDFADB;
+--violet:#E7E4FA;
+--light-green:#EFFFEF;
+}
+body{padding:0; margin:0;}
 table{
   border-collapse: collapse;
+  width: 100%;
 }
 tr, td{
   width: 30%;
 }
-#cell{
+.cell-for-insert{
   padding: 0px;
   line-height: 28px;  
 }
-#insert{
+.insert-table{
   width: 100%;
 }
 
-
 /* -------------COLORS----------------- */
-.F8EBD6
+.light-orange
 {
-  background-color: #F8EBD6;
+  background-color:var(--light-orange);
 }
-.F3F6DB
+.green
 {
-  background-color: #F3F6DB;
+  background-color: var(--green);
 }
-.FBE4C3
+.orange
 {
-  background-color: #FBE4C3;
+  background-color:var(--orange);
 }
-.E7E4FA
+.yellow
 {
-  background-color: #E7E4FA;
+  background-color: var(--yellow);
 }
-.EFFFEF
+.violet
 {
-  background-color: #EFFFEF;
+  background-color: var(--violet);
 }
-.FDFADB
+.light-green
 {
-  background-color: #FDFADB;
+  background-color: var(--light-green);
 }
