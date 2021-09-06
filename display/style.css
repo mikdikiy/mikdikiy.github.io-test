@@ -1,0 +1,67 @@
+
+html{height: 100%;}
+body{height: 100%; margin: 0;}
+:root
+{
+  --light-orange:#FAEBD8;
+  --green:#F5F5DD;
+  --orange:#FEE3C6;
+  --yellow:#FFF8DC;
+  --violet:#E5E6F8;
+  --light-green:#F1FFF0;
+}
+
+div{
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.line
+{
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  height: 20%;
+}
+.column
+{
+  display: inline-block;
+  font-size: 16px;
+}
+.with-row{padding: 0;}
+
+/* --------------HEIGHT---------------*/
+.vertical-flex{vertical-align: top;}
+.line>.column{height: 100%;}
+.three-row
+{
+  height:33.333333%;
+  padding: 5px; 
+}
+.two-row
+{
+  height:50%;
+  padding: 5px; 
+}
+.four-row
+{
+  height:25%;
+  padding: 5px; 
+}
+
+/* --------------WIDTH-------------------- */
+.line>.column{width: 33.33333%;}
+
+.line:nth-child(2)>.vertical-flex,
+.line:nth-child(4)>.yellow
+{
+  width: 66.66666%;
+}
+
+/* -------------COLORS----------------- */
+.light-orange{background-color: var(--light-orange);}
+.green{background-color: var(--green);}
+.orange{background-color: var(--orange);}
+.yellow{background-color: var(--yellow);}
+.violet{background-color: var(--violet);}
+.light-green{background-color: var(--light-green);}
