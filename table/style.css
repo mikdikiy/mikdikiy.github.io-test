@@ -1,0 +1,51 @@
+
+:root
+{
+--light-orange:#F8EBD6;
+--green:#F3F6DB;
+--orange: #FBE4C3;
+--yellow:#FDFADB;
+--violet:#E7E4FA;
+--light-green:#EFFFEF;
+}
+body{padding:0; margin:0;}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+tr, td{
+  width: 30%;
+}
+.cell-for-insert{
+  padding: 0px;
+  line-height: 28px;  
+}
+.insert-table{
+  width: 100%;
+}
+
+/* -------------COLORS----------------- */
+.light-orange
+{
+  background-color:var(--light-orange);
+}
+.green
+{
+  background-color: var(--green);
+}
+.orange
+{
+  background-color:var(--orange);
+}
+.yellow
+{
+  background-color: var(--yellow);
+}
+.violet
+{
+  background-color: var(--violet);
+}
+.light-green
+{
+  background-color: var(--light-green);
+}
