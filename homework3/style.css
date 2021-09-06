@@ -1,0 +1,40 @@
+body{width: 100%;}
+.container
+{
+  display: block;
+  box-sizing: border-box;
+  width: 1060px; height: 950px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+}
+.container-header
+{
+  display: block;
+  width: 966px; height: 120px;
+  position: absolute;
+  margin-top: 50px;
+  left: 47px;
+  border: 1px solid black;
+}
+.logo
+{
+  width: 144px; height: 40px;
+  /* font-size: 40px; */
+  margin-top: -1px;
+  /* margin-left: -5px; */
+  /* line-height: 0.7; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-size-adjust: 0.5;
+  border: 1px solid black;
+}
+.menu
+{ 
+  width: 966px; height: 40px;
+  margin-top: 38px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid black;
+}
