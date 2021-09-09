@@ -51,13 +51,14 @@ ul{list-style: none;}
 .menu
 { 
   max-width: 966px; max-height: 40px;
+  min-width: 800px;
   background:var(--menu-back-color);
   background: var(--menu-back-gradient);
 }
 .menu-button
 {
   box-sizing: border-box;
-  display: inline-flex;
+  display: inline-flex;  
   margin: 0 20px;
   width: 96px; height: 40px;
   align-items: center;
@@ -81,9 +82,9 @@ ul{list-style: none;}
 .left-menu
 {
   display: flex;
-  margin: 0;
+  margin: 0 20px 0 0;
   flex-direction: column;
-  width: 220px;
+  min-width: 220px;
 }
 .left-menu-button
 {
