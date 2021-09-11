@@ -1,1 +1,118 @@
 /* homework6 */
+body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
+
+.main-container
+{
+  max-width: 912px;
+  max-height: 1310px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  position: relative;
+  border: 1px solid black;
+}
+.header
+{
+  max-width: 912px;
+  max-height: 332px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+.header-panel
+{
+  display: inline-flex;
+  padding: 1px 8px;
+  margin-bottom: 8px;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+.header-telephone
+{
+  max-width: 292px;
+  max-height: 26px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 28px; /*!!!!*/
+  font-size: 14px;
+  color:#5F686C;
+}
+.authorize
+{
+  max-width: 500px;
+  max-height: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(52,103,135);
+  background: linear-gradient(-90deg, rgba(52,103,135,1) 0%, rgba(37,64,101,1) 59%, rgba(32,50,87,1) 100%);
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 0px rgba(34, 60, 80, 0.3);
+  margin-right:20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 11px;
+}
+.authorize-logo
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 26px; width: 13px;
+  margin-right: 5px;
+}
+.authorize-logo-up
+{
+  width: 8px;
+  height: 6px;
+  background-color:white;
+  border-radius: 8px;
+}
+.authorize-logo-down
+{
+  width: 13px; 
+  height: 10px;
+  background-color:white;
+  border-radius: 13px;
+}
+.authorize-input
+{
+  max-width: 114px;max-height: 16px;
+  border: 1px solid #6E7C8A;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+.authorize-button, .authorize-text
+{
+  color:white;
+  margin-right: 4px;
+  text-decoration: none;
+}
+.authorize-button:hover{text-decoration: underline;}
+.lost-parol{margin-left: 20px; color:#BDBDBD}
+.navigation
+{
+  max-width: 76px; max-height: 22px;
+  border: 1px solid #C0C6CA;
+  box-shadow: 1px 1px 2px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 15px;
+  padding-left: 8px;
+}
+.navigation-button
+{
+  height:16px; width: 16px;
+  margin-right: 8px;
+}
+.header-menu
+{
+  display: inline-flex;
+  border: 1px solid blue;
+  max-height: 42px;
+  margin-bottom: 8px;
+  font-family: sans-serif;
+  box-shadow: 3px 2px 3px 0px rgba(34, 60, 80, 0.3);
+}
