@@ -168,11 +168,12 @@ body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
 .find-panel
 {
   max-width: 912px;
-  max-height: 134px;
+  height: 136px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: top;
   justify-content: center;
+  padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -195,6 +196,7 @@ body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
   background: url(./img/select.png) no-repeat right;
   flex-wrap: nowrap;
 }
+td{padding:0 2px 0 2px;}
 .label
 {
   text-align: left;
@@ -235,13 +237,13 @@ body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
   border-collapse: collapse;
   text-align: left;
 }
-.disc-find .label{width: 74px; border-color:1px solid red;}
+.disc-find .label{width: 74px;}
 .by-mobile-type, .by-mobile-model, .by-mobile-complectation{width: 104px;}
 .by-mobile-year{width: 60px;}
 .by-mobile
 {
   width: 416px;
-  padding: 0 15px 20px 15px;
+  padding: 0 15px 10px 15px;
   margin-right: 18px;
 }
 .by-mobile-header-string
@@ -253,7 +255,7 @@ body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
   padding-inline: 5px;
   color:#284368;
   font-size: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 .by-mobile-header:nth-child(2){font-size: 12px;}
 
@@ -262,7 +264,49 @@ body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
 {
   width: 192px;
   margin-right: 10px;
+  padding-top: 0px;
 }
+.by-tire-find{border-collapse: collapse;}
+.by-tire-column{text-align: left;}
+.by-tire-check-text
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',sans-serif;
+  font-size: 12px;
+}
+.tire-season-panel
+{
+  display:flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.tire-season-container
+{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  margin-left: 5px;
+}
+.by-tire-check
+{
+  vertical-align: middle;
+  transform: scale(0.8);
+  margin: 0;
+}
+.by-tire-header-string
+{
+  display: flex;
+  margin-left: 10px;
+  color:#284368;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+.by-tire-find .label{width: 42px; text-align: right;}
+.by-tire-size
+{
+  width: 54px;
+}
+.by-tire-size-slash{font-size: 14px;}
+.by-tire-radius{width: 46px;}
 .by-disc
 {
   width: 274px;

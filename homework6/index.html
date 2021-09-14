@@ -58,127 +58,171 @@
       <div class="by-mobile-content">
         <table class="disc-find">
           <tr>
-            <th class="label">
+            <td class="label">
               <span class="label-accent">Марка </span>
               <span class="label-text">авто:</span>
-            </th>
-            <th>
+            </td>
+            <td>
             <select class="select by-mobile-type" name="disc-type">
               <option disabled selected></option>
               <option>BMV</option>
               <option>Ford</option>
               <option>Lexus</option>
             </select>
-            </th>
+            </td>
           </tr>
           <tr>
-            <th class="label">
+            <td class="label">
               <span class="label-accent">Модель </span>
               <span class="label-text">автомобиля:</span>
-            </th>
-            <th>
+            </td>
+            <td>
             <select class="select by-mobile-model" name="disc-model">
               <option disabled selected></option>
               <option>2109</option>
               <option>GT</option>
               <option>R-5</option>
             </select>
-            </th>
+            </td>
           </tr>
           <tr>
-            <th class="label">
+            <td class="label">
               <span class="label-accent">Год выпуска </span>
               <span class="label-text">автомобиля:</span>
-            </th>
-            <th>
+            </td>
+            <td>
             <select class="select by-mobile-year" name="disc-year">
               <option disabled selected></option>
               <option>1995</option>
               <option>2010</option>
               <option>2021</option>
             </select>
-            </th>
+            </td>
           </tr>
           <tr>
-            <th class="label">
+            <td class="label">
               <span class="label-accent">Комплектация:</span>
-            </th>
-            <th>
+            </td>
+            <td>
             <select class="select by-mobile-complectation" name="disc-complectation">
               <option disabled selected></option>
               <option>Full</option>
               <option>Base</option>
             </select>
-            </th>
+            </td>
           </tr>
         </table>
         <table class="tire-find">
           <tr>
-            <th class="label">
+            <td class="label">
               <span class="label-accent">Марка </span>
               <span class="label-text">авто:</span>
-            </th>
-            <th>
+            </td>
+            <td>
             <select class="select by-mobile-type" name="tire-type">
               <option disabled selected></option>
               <option>BMV</option>
               <option>Ford</option>
               <option>Lexus</option>
             </select>
-            </th>
+            </td>
           </tr>
           <tr>
-            <th class="label">
+            <td class="label">
               <span class="label-accent">Модель </span>
               <span class="label-text">автомобиля:</span>
-            </th>
-            <th>
+            </td>
+            <td>
             <select class="select by-mobile-model" name="tire-model">
               <option disabled selected></option>
               <option>2109</option>
               <option>GT</option>
               <option>R-5</option>
             </select>
-            </th>
+            </td>
           </tr>
           <tr>
-            <th class="label">
+            <td class="label">
               <span class="label-accent">Год выпуска </span>
               <span class="label-text">автомобиля:</span>
-            </th>
-            <th>
+            </td>
+            <td>
             <select class="select by-mobile-year" name="tire-year">
               <option disabled selected></option>
               <option>1995</option>
               <option>2010</option>
               <option>2021</option>
             </select>
-            </th>
+            </td>
           </tr>
           <tr>
-            <th class="label">
+            <td class="label">
               <span class="label-accent">Комплектация:</span>
-            </th>
-            <th>
+            </td>
+            <td>
             <select class="select by-mobile-complectation" name="tire-complectation">
               <option disabled selected></option>
               <option>Full</option>
               <option>Base</option>
             </select>
-            </th>
+            </td>
           </tr>
         </table>
       </div>
       <a class="find-ok" href="https://google.com">поиск...</a>
     </form>
+    <!-- ----------------------------------------- -->
     <form class="find by-tire">
-      tire
+      <span class="by-tire-header-string">Поиск шин</span>
+      <table class="by-tire-find">
+        <tr>
+          <td class="label">
+            <span class="label-accent">Размер:</span>
+          </td>
+          <td class="by-tire-column">
+          <select class="select by-tire-size" name="tire-size">
+            <option>145</option>
+            <option>100</option>
+          </select>
+          </td>
+          <td class="by-tire-size-slash">/</td>
+          <td>
+            <select class="select by-tire-size" name="tire-size-width">
+              <option disabled selected></option>
+              <option>50</option>
+              <option>80</option>
+            </select>
+          </td>
+        <tr>
+          <td class="label">
+            <span class="label-accent">R</span>
+          </td>
+          <td class="by-tire-column">
+          <select class="select by-tire-radius" name="tire-radius">
+            <option>12</option>
+            <option>20</option>
+          </select>
+          </td>   
+        </tr>  
+      </table>
+      <div class="tire-season-panel">  
+        <span class="label-accent">Сезон:</span>
+          <div class="tire-season-container">          
+            <span class="by-tire-check-text">
+              <input class="by-tire-check" type="checkbox" name="summer">лето</span>
+            <span class="by-tire-check-text">
+              <input class="by-tire-check" type="checkbox" name="winter">зима</span>
+            <span class="by-tire-check-text">
+              <input class="by-tire-check" type="checkbox" name="all-season">всесез</span>
+          </div>
+      </div>
+      <a class="find-ok" href="https://google.com">поиск...</a>  
     </form>
     <form class="find by-disc">
       disc
     </form>
     </div>
-  
+    
   
   
   
