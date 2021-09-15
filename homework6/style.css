@@ -164,7 +164,7 @@ body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
 .basket-total-ware{margin-right: 10px;}
 .basket-total-cash{margin-right: 5px;}
 .total-cash{margin-right: 10px;}
-/* ------------------------------------------------------------------------- */
+/* --------------------------------find------------------------------------ */
 .find-panel
 {
   max-width: 912px;
@@ -176,6 +176,7 @@ body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
+  margin-bottom: 10px;
 }
 .find
 {
@@ -264,7 +265,7 @@ td{padding:0 2px 0 2px;}
 {
   width: 192px;
   margin-right: 10px;
-  padding-top: 0px;
+  padding: 0 0 0 10px;
 }
 .by-tire-find{border-collapse: collapse;}
 .by-tire-column{text-align: left;}
@@ -292,7 +293,7 @@ td{padding:0 2px 0 2px;}
   transform: scale(0.8);
   margin: 0;
 }
-.by-tire-header-string
+.by-tire-header-string, .by-disc-header-string
 {
   display: flex;
   margin-left: 10px;
@@ -307,7 +308,59 @@ td{padding:0 2px 0 2px;}
 }
 .by-tire-size-slash{font-size: 14px;}
 .by-tire-radius{width: 46px;}
+/* ------------------------------------------------------------------------ */
 .by-disc
 {
   width: 274px;
+}
+.by-disc-container
+{
+  display: flex;
+  flex-direction: row;
+}
+.by-disc-panel .label{width: 87px; text-align: left;}
+.by-disc-container select{width: 58px;}
+.by-disc-container .by-disc-hole {width: 52px;}
+.by-disc-panel{margin:0 10px 0 10px;padding: 0;}
+.by-disc-panel-plus
+{
+  margin-top: 2px;
+  line-height: 0.5;
+  border-left: 2px solid #BCC4C8;
+  padding: 0 0 0 10px;
+}
+/* ----------------------------mid-------------------------------------------- */
+.mid-container
+{
+  display: flex;
+  flex-direction: row;
+}
+.catalog
+{
+  width: 194px;
+  padding-top: 5px;
+}
+.content
+{
+  width: 526px;
+}
+.aside-header
+{
+  display: flex;
+  width:182px; height: 28px;
+  border: 1px solid #8B959A;
+  border-radius: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:#254065;
+  text-align: left; 
+  align-items:center;
+  line-height:1;
+}
+.aside-header-img
+{
+  width: 22px; height: 22px;
+  margin-right: 5px;
 }
