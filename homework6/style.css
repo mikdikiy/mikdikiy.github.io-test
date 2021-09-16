@@ -1,6 +1,9 @@
 /* homework6 */
 body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
 
+td{padding:0 2px 0 2px;}
+ul{list-style: none;}
+
 .main-container
 {
   max-width: 912px;
@@ -197,7 +200,7 @@ body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
   background: url(./img/select.png) no-repeat right;
   flex-wrap: nowrap;
 }
-td{padding:0 2px 0 2px;}
+
 .label
 {
   text-align: left;
@@ -259,7 +262,6 @@ td{padding:0 2px 0 2px;}
   margin-bottom: 0;
 }
 .by-mobile-header:nth-child(2){font-size: 12px;}
-
 
 .by-tire
 {
@@ -340,14 +342,19 @@ td{padding:0 2px 0 2px;}
   width: 194px;
   padding-top: 5px;
 }
+.brand{padding-top: 5px;}
 .content
 {
   width: 526px;
+  border: 1px solid #242a3c;
+  background: rgb(35,75,93);
+  background: linear-gradient(0deg, rgba(35,75,93,1) 0%, rgba(201,207,209,1) 100%);
+  margin-right: 10px;
 }
 .aside-header
 {
   display: flex;
-  width:182px; height: 28px;
+  width:150px; height: 28px;
   border: 1px solid #8B959A;
   border-radius: 12px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',sans-serif;
@@ -358,9 +365,69 @@ td{padding:0 2px 0 2px;}
   text-align: left; 
   align-items:center;
   line-height:1;
+  padding-left: 2px;
 }
 .aside-header-img
 {
   width: 22px; height: 22px;
   margin-right: 5px;
+  
 }
+.mid-container .aside-header:nth-child(1)
+{
+  margin-bottom: 15px;
+  width: 182px;
+  box-shadow: 3px 2px 3px 0px rgba(34, 60, 80, 0.3);
+}
+.catalog-list
+{
+  padding-left: 38px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',sans-serif;
+  font-size: 13px;
+}
+.brand-list{padding-left: 27px;}
+.catalog-check
+{
+  width: 8px; height: 8px;
+  margin: 0;
+}
+.catalog-list-item
+{
+  height: 16px;
+  display: flex;
+  align-items: baseline;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+.catalog-list-text
+{
+  color:#4A5961;
+  margin-left: 4px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.catalog .catalog-list-text:hover
+{
+  border-bottom: 2px solid #6C768A;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  color:#203257
+}
+.brand .aside-header{margin-left:15px;}
+.brand .aside-header:nth-child(1){margin-left:0;}
+.brand-list .catalog-check{margin-right: 15px;}
+.select-button
+{
+  margin-left: 27px;
+  padding: 5px 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: white;
+  background: rgb(32,105,136);
+  background: linear-gradient(0deg, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
+  border: 1px solid #a7abae;
+  border-radius: 10px;
+}
+.select-button:hover{cursor: pointer;}
