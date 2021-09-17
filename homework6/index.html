@@ -7,8 +7,8 @@
 </head>
 <body>
   <div class="main-container">
+    <!--- HEADER -->
     <header class="header">
-      <!-- firstline -->
       <div class="header-panel">
         <span class="header-telephone">
           <img src="./img/telephone.png">(044)123-45-67 (044)567-89-10
@@ -48,244 +48,248 @@
         </div>
       </nav>
     </header>
+    <!--- FIND PANEL -->
     <div class="find-panel">
-    <form class="find by-mobile">
-      <div class="by-mobile-header-string">
-        <span class="by-mobile-header">Диски:</span>
-        <span class="by-mobile-header">Поиск по автомобилю</span>
-        <span class="by-mobile-header">Шины:</span>
-      </div>
-      <div class="by-mobile-content">
-        <table class="disc-find">
-          <tr>
-            <td class="label">
-              <span class="label-accent">Марка </span>
-              <span class="label-text">авто:</span>
-            </td>
-            <td>
-            <select class="select by-mobile-type" name="disc-type">
-              <option disabled selected></option>
-              <option>BMV</option>
-              <option>Ford</option>
-              <option>Lexus</option>
-            </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="label">
-              <span class="label-accent">Модель </span>
-              <span class="label-text">автомобиля:</span>
-            </td>
-            <td>
-            <select class="select by-mobile-model" name="disc-model">
-              <option disabled selected></option>
-              <option>2109</option>
-              <option>GT</option>
-              <option>R-5</option>
-            </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="label">
-              <span class="label-accent">Год выпуска </span>
-              <span class="label-text">автомобиля:</span>
-            </td>
-            <td>
-            <select class="select by-mobile-year" name="disc-year">
-              <option disabled selected></option>
-              <option>1995</option>
-              <option>2010</option>
-              <option>2021</option>
-            </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="label">
-              <span class="label-accent">Комплектация:</span>
-            </td>
-            <td>
-            <select class="select by-mobile-complectation" name="disc-complectation">
-              <option disabled selected></option>
-              <option>Full</option>
-              <option>Base</option>
-            </select>
-            </td>
-          </tr>
-        </table>
-        <table class="tire-find">
-          <tr>
-            <td class="label">
-              <span class="label-accent">Марка </span>
-              <span class="label-text">авто:</span>
-            </td>
-            <td>
-            <select class="select by-mobile-type" name="tire-type">
-              <option disabled selected></option>
-              <option>BMV</option>
-              <option>Ford</option>
-              <option>Lexus</option>
-            </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="label">
-              <span class="label-accent">Модель </span>
-              <span class="label-text">автомобиля:</span>
-            </td>
-            <td>
-            <select class="select by-mobile-model" name="tire-model">
-              <option disabled selected></option>
-              <option>2109</option>
-              <option>GT</option>
-              <option>R-5</option>
-            </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="label">
-              <span class="label-accent">Год выпуска </span>
-              <span class="label-text">автомобиля:</span>
-            </td>
-            <td>
-            <select class="select by-mobile-year" name="tire-year">
-              <option disabled selected></option>
-              <option>1995</option>
-              <option>2010</option>
-              <option>2021</option>
-            </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="label">
-              <span class="label-accent">Комплектация:</span>
-            </td>
-            <td>
-            <select class="select by-mobile-complectation" name="tire-complectation">
-              <option disabled selected></option>
-              <option>Full</option>
-              <option>Base</option>
-            </select>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <a class="find-ok" href="https://google.com">поиск...</a>
-    </form>
-    <!-- ----------------------------------------- -->
-    <form class="find by-tire">
-      <span class="by-tire-header-string">Поиск шин</span>
-      <table class="by-tire-find">
-        <tr>
-          <td class="label">
-            <span class="label-accent">Размер:</span>
-          </td>
-          <td class="by-tire-column">
-          <select class="select by-tire-size" name="tire-size">
-            <option>145</option>
-            <option>100</option>
-          </select>
-          </td>
-          <td class="by-tire-size-slash">/</td>
-          <td>
-            <select class="select by-tire-size" name="tire-size-width">
-              <option disabled selected></option>
-              <option>50</option>
-              <option>80</option>
-            </select>
-          </td>
-        <tr>
-          <td class="label">
-            <span class="label-accent">R</span>
-          </td>
-          <td class="by-tire-column">
-          <select class="select by-tire-radius" name="tire-radius">
-            <option>12</option>
-            <option>20</option>
-          </select>
-          </td>   
-        </tr>  
-      </table>
-      <div class="tire-season-panel">  
-        <span class="label-accent">Сезон:</span>
-          <div class="tire-season-container">          
-            <span class="by-tire-check-text">
-              <input class="by-tire-check" type="checkbox" name="summer">лето</span>
-            <span class="by-tire-check-text">
-              <input class="by-tire-check" type="checkbox" name="winter">зима</span>
-            <span class="by-tire-check-text">
-              <input class="by-tire-check" type="checkbox" name="all-season">всесез</span>
-          </div>
-      </div>
-      <a class="find-ok" href="https://google.com">поиск...</a>  
-    </form>
-     <!-- ----------------------------------------- -->
-    <form class="find by-disc">
-      <div class="by-disc-container">
-        <div class="by-disc-panel">
-          <span class="by-disc-header-string">Поиск дисков</span>
-          <table class="by-disc-find">
+      <!--- FIND BY MOBILE -->
+      <form class="find by-mobile">
+        <div class="by-mobile-header-string">
+          <span class="by-mobile-header">Диски:</span>
+          <span class="by-mobile-header">Поиск по автомобилю</span>
+          <span class="by-mobile-header">Шины:</span>
+        </div>
+        <div class="by-mobile-content">
+          <table class="disc-find">
             <tr>
               <td class="label">
-                <span class="label-accent">Диаметр</span>
-                <span class="label-text">диска:</span>
+                <span class="label-accent">Марка </span>
+                <span class="label-text">авто:</span>
               </td>
               <td>
-                <select class="select by-disc-diametr" name="disc-diametr">
-                  <option>14</option>
-                  <option>50</option>
-                </select>
+              <select class="select by-mobile-type" name="disc-type">
+                <option disabled selected></option>
+                <option>BMV</option>
+                <option>Ford</option>
+                <option>Lexus</option>
+              </select>
               </td>
             </tr>
             <tr>
               <td class="label">
-                <span class="label-accent">Количество</span>
-                <span class="label-text">крепежных</span>
-                <span class="label-text">отверстий:</span>
+                <span class="label-accent">Модель </span>
+                <span class="label-text">автомобиля:</span>
               </td>
               <td>
-                <select class="select by-disc-hole" name="disc-hole-count">
-                  <option>3</option>
-                  <option>4</option>
-                </select>
+              <select class="select by-mobile-model" name="disc-model">
+                <option disabled selected></option>
+                <option>2109</option>
+                <option>GT</option>
+                <option>R-5</option>
+              </select>
               </td>
             </tr>
             <tr>
               <td class="label">
-                <span class="label-accent">Диаметр</span>
-                <span class="label-text">расположения</span>
-                <span class="label-text">крепежных</span>
-                <span class="label-text">отверстий:</span>
+                <span class="label-accent">Год выпуска </span>
+                <span class="label-text">автомобиля:</span>
               </td>
               <td>
-                <select class="select by-disc-hole-diametr" name="disc-hole-diametr">
-                  <option>12</option>
-                  <option>15</option>
-                </select>
+              <select class="select by-mobile-year" name="disc-year">
+                <option disabled selected></option>
+                <option>1995</option>
+                <option>2010</option>
+                <option>2021</option>
+              </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <span class="label-accent">Комплектация:</span>
+              </td>
+              <td>
+              <select class="select by-mobile-complectation" name="disc-complectation">
+                <option disabled selected></option>
+                <option>Full</option>
+                <option>Base</option>
+              </select>
+              </td>
+            </tr>
+          </table>
+          <table class="tire-find">
+            <tr>
+              <td class="label">
+                <span class="label-accent">Марка </span>
+                <span class="label-text">авто:</span>
+              </td>
+              <td>
+              <select class="select by-mobile-type" name="tire-type">
+                <option disabled selected></option>
+                <option>BMV</option>
+                <option>Ford</option>
+                <option>Lexus</option>
+              </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <span class="label-accent">Модель </span>
+                <span class="label-text">автомобиля:</span>
+              </td>
+              <td>
+              <select class="select by-mobile-model" name="tire-model">
+                <option disabled selected></option>
+                <option>2109</option>
+                <option>GT</option>
+                <option>R-5</option>
+              </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <span class="label-accent">Год выпуска </span>
+                <span class="label-text">автомобиля:</span>
+              </td>
+              <td>
+              <select class="select by-mobile-year" name="tire-year">
+                <option disabled selected></option>
+                <option>1995</option>
+                <option>2010</option>
+                <option>2021</option>
+              </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <span class="label-accent">Комплектация:</span>
+              </td>
+              <td>
+              <select class="select by-mobile-complectation" name="tire-complectation">
+                <option disabled selected></option>
+                <option>Full</option>
+                <option>Base</option>
+              </select>
               </td>
             </tr>
           </table>
         </div>
-        <div class="by-disc-panel-plus">
-          <span class="label-accent">ДЦО</span><br>
-          <span class="label-text">(диаметр</span>
-          <span class="label-text">центрального</span>
-          <span class="label-text">отверстия):</span><br><br>
-          <select class="select by-disc-center-diametr" name="disc-center-diametr">
-            <option>12</option>
-            <option>15</option>
-          </select><br>
-          <span class="label-accent">ET</span><br>
-          <span class="label-text">(вылет диска):</span><br><br>
-          <select class="select by-disc-et" name="disc-et">
-            <option>12</option>
-            <option>15</option>
-          </select>
+        <a class="find-ok" href="https://google.com">поиск...</a>
+      </form>
+        <!--- FIND BY TIRE -->
+      <form class="find by-tire">
+        <span class="by-tire-header-string">Поиск шин</span>
+        <table class="by-tire-find">
+          <tr>
+            <td class="label">
+              <span class="label-accent">Размер:</span>
+            </td>
+            <td class="by-tire-column">
+            <select class="select by-tire-size" name="tire-size">
+              <option>145</option>
+              <option>100</option>
+            </select>
+            </td>
+            <td class="by-tire-size-slash">/</td>
+            <td>
+              <select class="select by-tire-size" name="tire-size-width">
+                <option disabled selected></option>
+                <option>50</option>
+                <option>80</option>
+              </select>
+            </td>
+          <tr>
+            <td class="label">
+              <span class="label-accent">R</span>
+            </td>
+            <td class="by-tire-column">
+            <select class="select by-tire-radius" name="tire-radius">
+              <option>12</option>
+              <option>20</option>
+            </select>
+            </td>   
+          </tr>  
+        </table>
+        <div class="tire-season-panel">  
+          <span class="label-accent">Сезон:</span>
+            <div class="tire-season-container">          
+              <span class="by-tire-check-text">
+                <input class="by-tire-check" type="checkbox" name="summer">лето</span>
+              <span class="by-tire-check-text">
+                <input class="by-tire-check" type="checkbox" name="winter">зима</span>
+              <span class="by-tire-check-text">
+                <input class="by-tire-check" type="checkbox" name="all-season">всесез</span>
+            </div>
         </div>
-      </div>
-      <a class="find-ok" href="https://google.com">поиск...</a> 
-    </form>
+        <a class="find-ok" href="https://google.com">поиск...</a>  
+      </form>
+        <!--- FIND BY DISC -->
+      <form class="find by-disc">
+        <div class="by-disc-container">
+          <div class="by-disc-panel">
+            <span class="by-disc-header-string">Поиск дисков</span>
+            <table class="by-disc-find">
+              <tr>
+                <td class="label">
+                  <span class="label-accent">Диаметр</span>
+                  <span class="label-text">диска:</span>
+                </td>
+                <td>
+                  <select class="select by-disc-diametr" name="disc-diametr">
+                    <option>14</option>
+                    <option>50</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                  <span class="label-accent">Количество</span>
+                  <span class="label-text">крепежных</span>
+                  <span class="label-text">отверстий:</span>
+                </td>
+                <td>
+                  <select class="select by-disc-hole" name="disc-hole-count">
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                  <span class="label-accent">Диаметр</span>
+                  <span class="label-text">расположения</span>
+                  <span class="label-text">крепежных</span>
+                  <span class="label-text">отверстий:</span>
+                </td>
+                <td>
+                  <select class="select by-disc-hole-diametr" name="disc-hole-diametr">
+                    <option>12</option>
+                    <option>15</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="by-disc-panel-plus">
+            <span class="label-accent">ДЦО</span><br>
+            <span class="label-text">(диаметр</span>
+            <span class="label-text">центрального</span>
+            <span class="label-text">отверстия):</span><br><br>
+            <select class="select by-disc-center-diametr" name="disc-center-diametr">
+              <option>12</option>
+              <option>15</option>
+            </select><br>
+            <span class="label-accent">ET</span><br>
+            <span class="label-text">(вылет диска):</span><br><br>
+            <select class="select by-disc-et" name="disc-et">
+              <option>12</option>
+              <option>15</option>
+            </select>
+          </div>
+        </div>
+        <a class="find-ok" href="https://google.com">поиск...</a> 
+      </form>
+      <!--- MID -->
     </div>
     <div class="mid-container">
+        <!--- CATALOG SIDEBAR -->
       <aside class="catalog">
         <div class="aside-header">
           <img class="aside-header-img" src="./img/catalog.png">
@@ -300,7 +304,7 @@
               <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-1" name="tire-radio">
               <label for="name-1">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 1</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 1</a>
               </label>
             </div>
           </li>
@@ -308,7 +312,7 @@
             <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-2" name="tire-radio">
               <label for="name-2">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 2</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 2</a>
               </label>
             </div>
           </li>
@@ -316,7 +320,7 @@
             <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-3" name="tire-radio">
               <label for="name-3">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 3</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 3</a>
               </label>
             </div>
           </li>
@@ -324,7 +328,7 @@
             <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-4" name="tire-radio">
               <label for="name-4">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 4</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 4</a>
             </label>
             </div>
           </li>
@@ -338,7 +342,7 @@
               <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-disc-1" name="disc-radio">
               <label for="name-1">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 1</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 1</a>
               </label>
             </div>
           </li>
@@ -346,7 +350,7 @@
             <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-disc-2" name="disc-radio">
               <label for="name-2">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 2</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 2</a>
               </label>
             </div>
           </li>
@@ -354,7 +358,7 @@
             <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-disc-3" name="disc-radio">
               <label for="name-3">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 3</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 3</a>
               </label>
             </div>
           </li>
@@ -362,7 +366,7 @@
             <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-disc-4" name="disc-radio">
               <label for="name-4">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 4</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 4</a>
             </label>
             </div>
           </li>
@@ -376,7 +380,7 @@
               <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-bolt-1" name="bolt-radio">
               <label for="name-1">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 1</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 1</a>
               </label>
             </div>
           </li>
@@ -384,7 +388,7 @@
             <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-bolt-2" name="bolt-radio">
               <label for="name-2">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 2</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 2</a>
               </label>
             </div>
           </li>
@@ -392,7 +396,7 @@
             <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-bolt-3" name="bolt-radio">
               <label for="name-3">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 3</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 3</a>
               </label>
             </div>
           </li>
@@ -400,12 +404,13 @@
             <div class="catalog-list-item">
               <input class="catalog-check" type="radio" id="name-bolt-4" name="bolt-radio">
               <label for="name-4">
-                <a class="catalog-list-text" href="https//:google.com">Наименование 4</a>
+                <a class="catalog-list-text" href="https://google.com">Наименование 4</a>
             </label>
             </div>
           </li>
         </ul>
       </aside>
+      <!--- WARE PANEL -->
       <main class="content">
         <table class="content-ware">
           <tr>
@@ -470,6 +475,7 @@
           </tr>
         </table>
       </main>
+      <!--- BRAND SIDEBAR -->
       <aside class="brand">
         <div class="aside-header">
           <img class="aside-header-img" src="./img/catalog.png">
@@ -527,6 +533,7 @@
           <button class="select-button">выбрать</button>
       </aside>
     </div>
+    <!--- PAGER -->
     <div class="logo-pager-container">
       <div class="logo-brand"><img src="./img/toyo.png"></div>
       <div class="logo-brand"><img src="./img/brigestone.png"></div>
@@ -550,6 +557,7 @@
         <a class="pager-button" href="https://google.com">>></a>
       </div>
     </div>
+    <!--- FOOTER -->
     <footer class="footer">
       <a class="footer-button" href="https://google.com">О компании</a>
       <span class="footer-text">|</span>
@@ -559,7 +567,6 @@
       <span class="footer-text">|</span>
       <a class="footer-button" href="https://google.com">Контакты</a>
       <span class="site-creator">Создание сайта © Global Vision</span>
-
     </footer>
   </div>
 </body>
