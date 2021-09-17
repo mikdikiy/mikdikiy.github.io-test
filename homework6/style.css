@@ -1,7 +1,5 @@
 /* homework6 */
 body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
-
-td{padding:0 2px 0 2px;}
 ul{list-style: none;}
 
 .main-container
@@ -181,6 +179,7 @@ ul{list-style: none;}
   padding-right: 5px;
   margin-bottom: 10px;
 }
+.find-panel td{padding:0 2px 0 2px;}
 .find
 {
   position: relative;
@@ -304,17 +303,11 @@ ul{list-style: none;}
   text-transform: lowercase;
 }
 .by-tire-find .label{width: 42px; text-align: right;}
-.by-tire-size
-{
-  width: 54px;
-}
+.by-tire-size{width: 54px;}
 .by-tire-size-slash{font-size: 14px;}
 .by-tire-radius{width: 46px;}
 /* ------------------------------------------------------------------------ */
-.by-disc
-{
-  width: 274px;
-}
+.by-disc{width: 274px;}
 .by-disc-container
 {
   display: flex;
@@ -347,9 +340,8 @@ ul{list-style: none;}
 {
   width: 526px;
   border: 1px solid #242a3c;
-  background: rgb(35,75,93);
-  background: linear-gradient(0deg, rgba(35,75,93,1) 0%, rgba(201,207,209,1) 100%);
-  margin-right: 10px;
+  background: linear-gradient(0deg,rgb(35,75,93,0.5) 0%, rgba(201,207,209,0.5) 100%);
+  margin-right: 10px; margin-bottom: 7px;
 }
 .aside-header
 {
@@ -415,6 +407,46 @@ ul{list-style: none;}
   font-style: italic;
   color:#203257
 }
+/* ------------------------------------------------------------------------- */
+.content-ware
+{
+  width: 526px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',sans-serif;
+}
+.wheel-brand
+{
+  color:#206988;
+  font-size: 15px;
+  font-weight: 600;
+}
+.wheel-model
+{
+  color:#1f2528;
+  font-size: 13px;
+}
+.wheel-price
+{
+  color:#114165;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+.wheel-img
+{
+  display: flex;
+  align-items: center; justify-content: center;
+  background-color: white;
+  width: 140px; height: 130px;
+  border: 1px solid #a4aeb1;
+  border-radius: 5%;
+  margin-left: auto; margin-right: auto;
+}
+.wheel-sale
+{
+  text-align: center;
+}
+/* ------------------------------------------------------------------------- */
 .brand .aside-header{margin-left:15px;}
 .brand .aside-header:nth-child(1){margin-left:0;}
 .brand-list .catalog-check{margin-right: 15px;}
@@ -431,3 +463,52 @@ ul{list-style: none;}
   border-radius: 10px;
 }
 .select-button:hover{cursor: pointer;}
+
+/* ---------------------------------------------------------------------- */
+.logo-pager-container
+{
+  width: 912px; height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-brand{margin: 0;}
+.pager
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',sans-serif;
+  font-size: 13px;
+  color:#465961;
+  position: absolute;
+}
+.pager-button
+{
+  text-decoration:none;
+  color:#465961;
+}
+/* ----------------------------------------------------------------------------- */
+.footer
+{
+  width: 912px; height: 100px;
+  background-color: #2A3B4E;
+  border: 1px solid #242a3c;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding-top: 10px;
+}
+.footer-button, .footer-text
+{
+  color: #bec6c9;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.footer-button:hover{color: #52abcb;}
+.site-creator
+{
+  font-size: 10px;
+  color: #7f4740;
+  position: absolute;
+  margin-top: 40px;
+}
