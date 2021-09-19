@@ -1,5 +1,5 @@
 /* homework6 */
-body{height: 100vh;width: 100vw;margin: 0;padding: 0;}
+body{margin: 0;padding: 0;}
 ul{list-style: none;}
 :root
 {
@@ -28,6 +28,7 @@ ul{list-style: none;}
   --content-border-color:#242a3c;
   --aside-border-color:#8B959A;
   --aside-header-color:#254065;
+  --aside-header-border-color: #7A858B;
   --catalog-list-text-color:#4A5961;
   --catalog-list-text-hover-border-color:#6C768A;
   --catalog-list-text-hover-color:#203257;
@@ -50,7 +51,6 @@ ul{list-style: none;}
 .main-container
 {
   max-width: 912px;
-  max-height: 1310px;
   display: flex; flex-direction: column;
   margin-left: auto;margin-right: auto;
   padding-top: 16px;
@@ -60,7 +60,6 @@ ul{list-style: none;}
 /* -----------HEADER----------- */
 .header
 {
-  max-width: 912px; max-height: 332px;
   display: flex; flex-direction: column;
   margin-left: auto; margin-right: auto;
 }
@@ -73,7 +72,6 @@ ul{list-style: none;}
 }
 .header-telephone
 {
-  max-width: 292px; max-height: 26px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -83,7 +81,6 @@ ul{list-style: none;}
 }
 .authorize
 {
-  max-width: 500px; max-height: 26px;
   display: flex; flex-direction: row;
   align-items: center;
   border-radius: 4px;
@@ -114,7 +111,7 @@ ul{list-style: none;}
 }
 .authorize-input
 {
-  max-width: 114px; max-height: 16px;
+  max-width: 114px;
   border: 1px solid var(--authorize-border-color);
   border-radius: 3px;
   margin-right: 10px;
@@ -123,13 +120,13 @@ ul{list-style: none;}
 {
   color:var(--authorize-button-color);
   margin-right: 4px;
-  text-decoration: none;
-}
+  text-decoration: none;}
+.authorize-button:nth-of-type(2){margin-right: 10px;}
 .authorize-button:hover{text-decoration: underline;}
-.lost-parol{margin-left: 10px; color:var(--lost-parol-color)}
+.lost-parol{color:var(--lost-parol-color)}
 .navigation
 {
-  max-width: 76px; max-height: 22px;
+  max-height: 22px;
   border: 1px solid var(--nav-border-color);
   box-shadow: 1px 1px 2px 0px rgba(34, 60, 80, 0.2);
   border-radius: 15px;
@@ -147,7 +144,6 @@ ul{list-style: none;}
   padding:4px 10px 4px 4px;
   border: 1px solid var(--header-menu-border-color);
   border-radius: 5px;
-  max-height: 35px;
   margin-bottom: 8px;
   font-family: 'Lucida Sans Regular', 'Lucida Grande', Verdana, sans-serif;
   box-shadow: 3px 2px 3px 0px rgba(34, 60, 80, 0.3);
@@ -160,7 +156,6 @@ ul{list-style: none;}
   font-size: 14px;
   color:var(--menu-button-color);
   padding-right: 12px; padding-left: 12px;
-  max-height: 26px;
 }
 .menu-button:hover
 {
@@ -174,7 +169,7 @@ ul{list-style: none;}
   align-items:center; justify-content: flex-end;
   font-family: Arial, sans-serif;
   min-width: 216px;
-  margin-left: 70px; margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 .basket-img{width: 20px; height: 14px; margin-right: 5px;}
 .basket-text
@@ -195,18 +190,18 @@ ul{list-style: none;}
 /* -----------FIND PANEL----------- */
 .find-panel
 {
-  max-width: 912px; height: 136px;
+  height: 136px;
   display: flex; flex-direction: row;
-  align-items: top; justify-content: center;
+  justify-content: center;
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 10px;
 }
-.find-panel td{padding:0 2px 0 2px;}
+.find-panel td{padding:0 2px 0 2px ;}
 .find
 {
-  position: relative;
+  position: relative; padding:2px;
   border: 1px solid var(--find-border-color);
   border-radius: 15px;
   font-family: Arial, sans-serif;
@@ -249,7 +244,7 @@ ul{list-style: none;}
 .by-mobile-content
 {
   display: flex;
-  align-items: top; justify-content: space-between;
+  justify-content: space-between;
 }
 .disc-find, .tire-find
 {
@@ -293,13 +288,13 @@ ul{list-style: none;}
 .tire-season-panel
 {
   display:flex; flex-direction: row;
-  margin-left: 10px;
+  padding: 5px 0 0 10px;
 }
+.tire-season-panel .label-accent{margin-right: 5px;}
 .tire-season-container
 {
   display: flex; flex-direction: column;
   line-height: 1.1;
-  margin-left: 5px;
 }
 .by-tire-check
 {
@@ -310,7 +305,7 @@ ul{list-style: none;}
 .by-tire-header-string, .by-disc-header-string
 {
   display: flex;
-  margin-left: 10px;
+  
   color:var(--by-tire-and-disc-color);
   font-size: 12px;
   text-transform: lowercase;
@@ -328,7 +323,6 @@ ul{list-style: none;}
 .by-disc-panel{margin:0 10px 0 10px;padding: 0;}
 .by-disc-panel-plus
 {
-  margin-top: 2px;
   line-height: 0.5;
   border-left: 2px solid var(--by-disc-panel-plus-border-color);
   padding: 0 0 0 10px;
@@ -341,10 +335,9 @@ ul{list-style: none;}
   padding-top: 5px;
   margin-right: 4px;
 }
-.brand{padding-top: 5px;}
+.brand{padding-top: 5px; padding-left: 4px;}
 .content
 {
-  width: 526px;
   border: 1px solid var(--content-border-color);
   border-radius: 5px;
   background: linear-gradient(0deg,rgb(35,75,93,0.5) 0%, rgba(201,207,209,0.5) 100%);
@@ -370,7 +363,7 @@ ul{list-style: none;}
   width: 22px; height: 22px;
   margin-right: 5px;
 }
-.mid-container .aside-header:nth-child(1)
+.first-aside-header
 {
   margin-bottom: 15px;
   width: 182px;
@@ -386,11 +379,11 @@ ul{list-style: none;}
 .catalog-check
 {
   width: 8px; height: 8px;
-  margin: 0;
+  margin:0 4px 0 0;
 }
 .catalog-list-item
 {
-  height: 16px;
+  height: 16px; 
   display: flex; align-items: baseline;
   padding-left: 0;
   margin-bottom: 5px;
@@ -398,7 +391,7 @@ ul{list-style: none;}
 .catalog-list-text
 {
   color:var(--catalog-list-text-color);
-  margin-left: 4px;
+  
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -446,12 +439,12 @@ ul{list-style: none;}
 }
 .wheel-sale{text-align: center;}
 /* -----------BRAND----------- */
-.brand .aside-header{margin-left:15px;}
-.brand .aside-header:nth-child(1){margin-left:0;}
+.brand-container{padding-left: 15px;}
+.select-button-container{padding-left: 15px;}
 .brand-list .catalog-check{margin-right: 15px;}
 .select-button
 {
-  margin-left: 27px;
+  
   padding: 5px 10px;
   font-size: 11px;
   text-transform: uppercase;
@@ -465,7 +458,7 @@ ul{list-style: none;}
 /* -----------PAGER----------- */
 .logo-pager-container
 {
-  width: 912px; height: 77px;
+  height: 77px;
   display: flex;
   align-items: center; justify-content: center;
 }
@@ -488,7 +481,7 @@ ul{list-style: none;}
   width: 912px; height: 100px;
   background-color: var(--footer-color);
   border: 1px solid var(--footer-border-color);
-  display: flex;
+  display: flex; flex-wrap: wrap;
   align-items: flex-start; justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -505,6 +498,5 @@ ul{list-style: none;}
 {
   font-size: 10px;
   color: var(--site-creator-color);
-  position: absolute;
-  margin-top: 40px;
 }
+.flex-break {flex-basis: 100%; height: 0;}
