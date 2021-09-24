@@ -142,43 +142,34 @@
               </select>
           </div>
         </div>
-        <!-- <a class="find-ok" href="https://google.com">поиск...</a> -->
+        <a class="find-ok" href="https://google.com">поиск...</a>
       </form>  
-<!-- ----------------------------------------------------------------------------------       -->
-
+      <!-- -------------------------------------------------------------       -->
       <form class="find by-tire">
         <span class="by-tire-header-string">Поиск шин</span>
-        <table class="by-tire-find">
-          <tr>
-            <td class="label">
-              <span class="label-accent">Размер:</span>
-            </td>
-            <td class="by-tire-column">
+        <div class="by-tire-find">
+          <div class="by-tire-column">
+            <span class="label label-accent">Размер:</span>
             <select class="select by-tire-size" name="tire-size">
               <option>145</option>
               <option>100</option>
             </select>
-            </td>
-            <td class="by-tire-size-slash">/</td>
-            <td>
-              <select class="select by-tire-size" name="tire-size-width">
-                <option disabled selected></option>
-                <option>50</option>
-                <option>80</option>
-              </select>
-            </td>
-          <tr>
-            <td class="label">
-              <span class="label-accent">R</span>
-            </td>
-            <td class="by-tire-column">
-            <select class="select by-tire-radius" name="tire-radius">
-              <option>12</option>
-              <option>20</option>
+            <span class="by-tire-size-slash">/</span>
+            <select class="select by-tire-size" name="tire-size-width">
+              <option disabled selected></option>
+              <option>50</option>
+              <option>80</option>
             </select>
-            </td>   
-          </tr>  
-        </table>
+            <div class="by-tire-radius-container">
+              <span class="label label-accent">R</span>
+              <select class="select by-tire-radius" name="tire-radius">
+                <option>12</option>
+                <option>20</option>
+              </select>
+            </div>
+          </div>            
+        </div>
+
         <div class="tire-season-panel">  
           <span class="label-accent">Сезон:</span>
             <div class="tire-season-container">          
@@ -192,6 +183,9 @@
         </div>
         <a class="find-ok" href="https://google.com">поиск...</a>  
       </form>
+
+
+      
       <form class="find by-disc">
         <div class="by-disc-container">
           <div class="by-disc-panel">
