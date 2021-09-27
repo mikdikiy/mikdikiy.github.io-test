@@ -214,12 +214,11 @@ ul{list-style: none;}
 
 .find
 {
-  /* position: relative; */
   padding:2px;
   border: 1px solid var(--find-border-color);
   border-radius: 15px;
   font-family: Arial, sans-serif;
-  font-weight:1000;
+  font-weight:900;
   box-shadow: 3px 2px 3px 0px rgba(34, 60, 80, 0.3);
 }
 .select
@@ -230,6 +229,7 @@ ul{list-style: none;}
   border-bottom: none; border-right: none;
   overflow: hidden;
   background: url(./img/select.png) no-repeat right;
+  height: 1.1rem;
 }
 
 .label
@@ -243,7 +243,7 @@ ul{list-style: none;}
 .label-accent{color: var(--find-accent-color);}
 .find-ok
 {
-  float:right; background-color: #7f4740;
+  float:right;
   text-transform: lowercase;
   font-style: italic; font-size: 14px; font-weight: 400; text-decoration: none;
   color: var(--find-ok-button);
@@ -287,8 +287,8 @@ ul{list-style: none;}
 
 .by-tire
 {
-  display: flex; flex-direction: column;
   padding: 2px 10px 10px 10px;
+  margin-right: 15px;
 }
 .by-tire-column
 {
@@ -330,12 +330,31 @@ ul{list-style: none;}
 .by-tire-radius{width: 46px;}
 .by-tire-radius-container{padding-left: 33px;}
 
-.by-disc{width: 274px;}
-.by-disc-container{display: flex; flex-direction: row;}
-.by-disc-panel .label{width: 87px; text-align: left;}
-.by-disc-container select{width: 58px;}
-.by-disc-container .by-disc-hole {width: 52px;}
-.by-disc-panel{margin:0 10px 0 10px;padding: 0;}
+.by-disc
+{
+  max-width: 244px;
+  padding-left: 10px; padding-right: 10px;
+}
+.by-disc-panels
+{
+  display: flex; flex-direction: row;
+  margin-bottom: 12px;
+}
+.by-disc-panel
+{
+  margin:0 10px 0 0;
+  display: flex; flex-direction: column;
+  row-gap: 3px;
+}
+.by-disc-panel-string
+{
+  display: flex; flex-direction: row;
+  align-items: center;
+}
+.by-disc .label{width: 87px; text-align: left;}
+.by-disc select{width: 58px;}
+.by-disc .by-disc-hole {width: 52px;}
+
 .by-disc-panel-plus
 {
   line-height: 0.5;
