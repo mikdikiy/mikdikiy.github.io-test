@@ -362,7 +362,7 @@ ul{list-style: none;}
   padding: 0 0 0 10px;
 }
 /* -----------MID------------*/
-.mid-container{display: flex; flex-direction: row;}
+.mid-container{display: flex; flex-direction: row; justify-content: center;}
 .catalog
 {
   width: 194px;
@@ -440,8 +440,13 @@ ul{list-style: none;}
 /* -----------WARE----------- */
 .content-ware
 {
-  width: 526px;
+  max-width: 496px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap:10px;
+  padding:5px;
 }
 .wheel-brand
 {
@@ -471,7 +476,14 @@ ul{list-style: none;}
   border-radius: 5%;
   margin-left: auto; margin-right: auto;
 }
-.wheel-sale{text-align: center;}
+.wheel-sale
+{
+  display: flex; flex-direction: column;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.5;
+}
 /* -----------BRAND----------- */
 .brand-container{padding-left: 15px;}
 .select-button-container{padding-left: 15px;}
