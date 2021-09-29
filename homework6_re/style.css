@@ -45,8 +45,6 @@ ul{list-style: none;}
   --brand-select-button-color:white;
   --brand-select-button-border-color:#a7abae;
 
-  --pager-button-color:#465961;
-
   --footer-color:#2A3B4E;
   --footer-border-color:#242a3c;
   --footer-button-color:#bec6c9;
@@ -503,18 +501,6 @@ ul{list-style: none;}
   align-items: center; justify-content: center;
 }
 .logo-brand{margin: 0;}
-.pager
-{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',sans-serif;
-  font-size: 13px;
-  color:var(--pager-button-color);
-  position: absolute;
-}
-.pager-button
-{
-  text-decoration:none;
-  color:var(--pager-button-color);
-}
 
 /* -----------FOOTER----------- */
 .footer
