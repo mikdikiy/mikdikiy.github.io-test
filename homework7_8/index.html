@@ -4,8 +4,92 @@
   <meta charset="UTF-8">
   <title>homework 7-8</title>
   <link rel="stylesheet" href="./style.css">
+  <link href="https://allfont.ru/allfont.css?fonts=league-gothic" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="header-and-slider">
+      <header class="header">
+        <div class="logo">
+          <span class="text-start">PINGBULL</span><span class="text-end">ER</span>
+        </div>
+        <nav>
+          <ul class="header-menu">
+            <li class="header-menu-button">home</li>
+            <li class="header-menu-button">about</li>
+            <li class="header-menu-button">blog</li>
+            <li class="header-menu-button">product</li>
+            <li class="header-menu-button">lorem ipsum</li>
+            <li class="header-menu-button">dolor sit amet</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="slider-overlay">
+        <div class="slider-viewport">
+          <div class="carousel">
+            <div class="slider page-1">
+              <div class="slider-text-wrapper">
+                <h2 class="slider-heading">Lorem Ipsum Dolor #1</h2>
+                <h3 class="slider-subheading">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
+                <h4 class="slider-text">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</h4>
+              </div>
+              <div class="slider-img"><img src="./img/iphone.png"></div>
+            </div>
+            <div class="slider page-2">
+              <div class="slider-text-wrapper">
+                <h2 class="slider-heading">page #2</h2>
+                <h3 class="slider-subheading">maybe this WILL not MAKE YOUR DREAM COME TRUE?</h3>
+                <h4 class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro temporibus eius harum pariatur, repellat minima veritatis. Porro, deleniti maxime minus odio molestias dolore sit debitis. Explicabo animi asperiores vel?</h4>
+              </div>
+              <div class="slider-img"><img src="./img/iphone_2.png"></div>
+            </div>
+            <div class="slider page-3">
+              <div class="slider-text-wrapper">
+                <h2 class="slider-heading">page #3</h2>
+                <h3 class="slider-subheading">Slider</h3>
+                <h4 class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro temporibus eius harum pariatur, repellat minima veritatis.</h4>
+              </div>
+              <div class="slider-img"><img src="./img/iphone_3.png"></div>
+            </div>
+            <div class="slider page-4">
+              <div class="slider-text-wrapper">
+                <h2 class="slider-heading">page #4</h2>
+                <h3 class="slider-subheading">Slider Lorem</h3>
+                <h4 class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro temporibus eius harum pariatur, repellat minima veritatis.</h4>
+              </div>
+              <div class="slider-img"><img src="./img/iphone_4.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-pager">
+        <input class="slider-pager-radio radio-1" type="radio" name="slider-page" id="radio-1" onclick="checkType()" checked>
+        <label for="radio-1"></label>
+        <input class="slider-pager-radio radio-2" type="radio" name="slider-page" id="radio-2" onclick="checkType()">
+        <label for="radio-2"></label>
+        <input class="slider-pager-radio radio-3" type="radio" name="slider-page" id="radio-3" onclick="checkType()">
+        <label for="radio-3"></label>
+        <input class="slider-pager-radio radio-4" type="radio" name="slider-page" id="radio-4" onclick="checkType()">
+        <label for="radio-4"></label>
+      </div>
+    </div>
+    <div class="content">
+      111111111111111111111111111111
+    </div>
+  </div>
+
+<script>
+  function checkType(){
+    var checkRadio1 = document.getElementById('radio-1');
+    var checkRadio2 = document.getElementById('radio-2');
+    var checkRadio3 = document.getElementById('radio-3');
+    var checkRadio4 = document.getElementById('radio-4');
+    if (checkRadio1.checked){document.getElementsByClassName('carousel')[0].style.right = '0';}
+    if (checkRadio2.checked){document.getElementsByClassName('carousel')[0].style.right = '100%';}
+    if (checkRadio3.checked){document.getElementsByClassName('carousel')[0].style.right = '200%';}
+    if (checkRadio4.checked){document.getElementsByClassName('carousel')[0].style.right = '300%';}
+  }
+
+</script>
 </body>
 </html>
