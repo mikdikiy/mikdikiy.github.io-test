@@ -28,6 +28,8 @@
  --logotype-end-color:#b9b9b9;
  --copyright-color:#c5c5c5;
  --footer-menu-button-color:white;
+
+ --testimonial-slider-podsition:0;
 }
 html,body{
   font-family: 'League Gothic', arial;
@@ -248,7 +250,7 @@ ul{list-style: none;}
 .testimonials-carousel{
   display: flex;
   position: relative;
-  right: 0;
+  right:var(--testimonial-slider-podsition);
   transition: right 1s;
   gap:20%;
 }
@@ -289,38 +291,35 @@ ul{list-style: none;}
   margin: 0; padding: 0 10px 10px 0;
   color:var(--testimonial-text-color);
 }
-.testimonial-button-wrapper{
-  padding-left: 20%;
-  display: flex; 
-  align-items: center;
-}
 .testimonial-button{display: none;}
-.testimonial-button-wrapper .testimonial-label::before{
+.testimonial-label::before{
   content: "";
   display: inline-block;
   width: 18px; height: 18px;
   border:1px solid rgba(0,0,0,0.3);
   border-radius: 50%;
-  margin-right: 7px;
+  margin-right: 8px;
   cursor: pointer;
-}
-.testimonial-button:checked+.testimonial-label::before{
-  content: "";
-  display: inline-block;
-  width: 20px; height: 20px;
-  border:1px solid rgba(0,0,0,0.3);
-  border-radius: 50%;
+  position: relative; left:60px; top:250px;
+  box-sizing: border-box;
 }
 .testimonial-button:checked+.testimonial-label::after{
   content: "";
   display: inline-block;
-  width: 12px; height: 12px;
+  width: 10px; height: 10px;
   border:1px solid rgba(0,0,0,0.3);
   background-color: rgba(0,0,0,0.5);
   border-radius: 50%;
-  position: relative; left:-25px; top:-4px;
-  margin-right: -16px;
+  position: relative; left:38px; top:246px;
+  margin-right: -10px;
+  box-sizing: border-box;
 }
+#testimonial-btn-1,#testimonial-btn-2,#testimonial-btn-3,#testimonial-btn-4
+{position: relative; top:250px;}
+#testimonial-btn-1:checked~.testimonials-carousel{--testimonial-slider-podsition:0;}
+#testimonial-btn-2:checked~.testimonials-carousel{--testimonial-slider-podsition:120%;}
+#testimonial-btn-3:checked~.testimonials-carousel{--testimonial-slider-podsition:240%;}
+#testimonial-btn-4:checked~.testimonials-carousel{--testimonial-slider-podsition:360%;}
 .updates-layout{
   padding:5px 0 0 10px;
   color:var(--updates-layout-color);
