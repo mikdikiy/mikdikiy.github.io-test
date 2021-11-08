@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() { 
+  import { create, all } from 'mathjs'
+
+  const math = create(all) 
+ 
+
+
 
   var strCalc='&nbsp';
 
