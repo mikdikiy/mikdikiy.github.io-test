@@ -1,13 +1,13 @@
-.calculator{
+.calculator {
   padding: 10px 5px 10px 5px;
   width: 180px;
   border: 1px solid rgb(91, 152, 186);
   border-radius: 10px;
-  background-color: rgba(235, 235, 234,1);
+  background-color: rgba(235, 235, 234, 1);
   display: flex;
   flex-direction: column;
 }
-.input-wrapper{
+.input-wrapper {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -15,12 +15,18 @@
   border: 1px solid rgb(214, 214, 215);
   border-radius: 3px;
   background-color: white;
-  overflow-x:scroll;
+  overflow-x: scroll;
 }
-.input-string{
+.input-wrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.input-string {
   font-size: 20px;
+  outline: none;
+  border: 0 solid black;
 }
-.buttons{
+.buttons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -29,12 +35,12 @@
   row-gap: 15px;
   column-gap: 10px;
 }
-.button-wrapper{
+.button-wrapper {
   width: 35px;
   height: 35px;
   display: flex;
 }
-.calc-button{
+.calc-button {
   margin-left: auto;
   margin-right: auto;
 }
