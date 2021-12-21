@@ -1,0 +1,26 @@
+{
+  "name": "mikdikiy.github.io-test",
+  "version": "1.0.0",
+  "description": "Finds the country of origin of the incoming request",
+  "main": "index.js",
+  "dependencies": {
+    "mathjs": "^10.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikdikiy/mikdikiy.github.io-test.git"
+  },
+  "keywords": [
+    "ip"
+  ],
+  "author": "iam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikdikiy/mikdikiy.github.io-test/issues"
+  },
+  "homepage": "https://github.com/mikdikiy/mikdikiy.github.io-test#readme"
+}
